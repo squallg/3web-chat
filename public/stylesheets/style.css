@@ -1,0 +1,65 @@
+html, body  {
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#chatContainer {
+  height: 90vh;
+  overflow: auto;
+  background-color: rgb(194, 194, 194);
+}
+
+#chatContainer ul {
+  padding: 50px;
+}
+
+#chatContainer ul li {
+  list-style: none;
+  display: flex;
+}
+
+#chatContainer ul li span {
+  padding: 10px;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+#chatContainer ul .message {
+  justify-content: flex-start;
+}
+
+#chatContainer ul .answer {
+  justify-content: flex-end;
+}
+
+#chatContainer ul .message span {
+  background-color:#5c5cec;
+}
+
+#chatContainer ul .answer span {
+  background-color:#37b42c;
+}
+
+#messageInputContainer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+}
+
+#messageInputContainer input {
+  padding: 20px;
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+#messageInputContainer .send {
+  border: 0px;
+  background-color: rgb(21, 172, 29);
+  color: white;
+  padding: 20px;
+}
